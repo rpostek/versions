@@ -1,0 +1,34 @@
+# lista programów do sprawdzenia
+# wymagane nazwa i lokalizacja
+# wymagane kodowanie tego pliku UTF-8
+programy:
+  - nazwa: Egzekucje
+    producent: U.I. Infos
+    lokalizacja: \\server01\UG\Egzekucje.exe
+  - nazwa: Kasa
+    producent: U.I. Infos
+    lokalizacja: U:\kasa.exe
+  - nazwa: MS Word
+    producent: M$
+    lokalizacja: C:\Program Files\Microsoft Office\Office16\winword.exe
+
+
+# dane do wyświetlenia w tabeli
+# 'lokalizacja' to pełna ścieżka do pliku
+# 'data' to data zmiany pliku
+# 'plik' to nazwa pliku bez ścieżki
+dane:
+  - nazwa
+  - producent
+#  - lokalizacja
+#  - plik
+#  - data
+  - wersja
+
+# ścieżka do tworzonego dokumentu MS Word
+dokument: programy.docx
+
+#styl tabeli
+# lista stylów na https://python-docx.readthedocs.io/en/latest/user/styles-understanding.html#built-in-styles
+# w "Table styles in default template"
+styl: Light List Accent 1
