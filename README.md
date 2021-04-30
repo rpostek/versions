@@ -1,7 +1,7 @@
 # versions
 
 # Opis ogólny
-Program słuzy do generowania tabeli wybranego oprogramowania z wersjami. 
+Program słuzy do generowania tabeli wersji wybranego oprogramowania. 
 Tabela jest zapisywana do pliku MS Word.
 
 !['przykładowa tabela'](doc/img1.PNG)
