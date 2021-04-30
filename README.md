@@ -4,6 +4,8 @@
 Program słuzy do generowania tabeli wybranego oprogramowania z wersjami. 
 Tabela jest zapisywana do pliku MS Word.
 
+!['przykładowa tabela'](doc/img1.PNG)
+
 Program ma zastosowanie m. in. w Księgowości przy raportowaniu używanego oprogramowania księgowego.
 
 # Plik konfiguracyjny config.yaml
