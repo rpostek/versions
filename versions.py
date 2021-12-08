@@ -78,15 +78,18 @@ def update_document():
         for col in enumerate(columns, 0):
             row_cells[col[0]].text = getattr(p, col[1])
     document.add_paragraph(f'Sporządzono {datetime.datetime.now().isoformat(sep=" ")[:19]}')
-    document.save(config.get('dokument', 'programy.docx'))
+
+    path = pathlib.Path(config.get('dokument', '.'))
+    filename = f"programy_{datetime.date.today().year}_{datetime.date.today().month:02}.docx"
+    document.save(path.joinpath(filename))
 
 
 if __name__ == '__main__':
     config = Settings.read('config.yaml')
     try:
-        window = sg.Window("Wersje programów WBK 1.0", [[sg.Text("Zbieranie informacji:")],
+        window = sg.Window("Wersje programów WBK 1.1", [[sg.Text("Zbieranie informacji:")],
               [sg.Listbox(values=[], size=(30,len(config['programy'])),
-                        background_color='white', text_color='black', no_scrollbar=True, key='-LIST-')]],
+                        background_color='oldlace', text_color='black', no_scrollbar=True, key='-LIST-')]],
               finalize=True)
     except KeyError:
         sg.popup('błędy pliku konfiguracyjnego')
