@@ -5,7 +5,7 @@ import datetime
 from docx import Document
 from docx.shared import Pt
 from pefile import PE
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 
 class Settings:
     @staticmethod
